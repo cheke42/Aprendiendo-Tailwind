@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+</head>
+<body class="p-4">
+    <p class="underline mb-4">Grilla personalizada:</p>
+    <div class="grid grid-cols-4 gap-4 ">
+    <div class="card col-span-2">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card row-span-3">4</div>
+    <div class="card col-span-2">5</div>
+    <div class="card">6</div>
+    <div class="card col-[2/5]">7</div>
+    <div class="card">8</div>
+    <div class="card col-start-1 col-end-4">9</div>
+  </div>
+  <br>
+  <hr>
+  <br>
+  <p class="underline mb-4">Grilla de web simple:</p>
+  <div class="class grid grid-cols-2 gap-4 h-[100vh]">
+    <div class="card col-span-2">Header</div>
+    <div class="card col-span-2">Nav</div>
+    <div class="card">Section</div>
+    <div class="card">Article</div>
+    <div class="card row-[3/5] col-start-2">Aside</div>
+    <div class="card col-span-2">Footer</div>
+  </div>
+
+
+
+  <div class="absolute bottom-0 right-0 ...">
+    <button class="bg-green-800 text-white rounded-sm py-1 px-2 m-4 hover:bg-green-700"><a href="/src"><i class="fa-solid fa-arrow-left-long"></i> Volver</a></button>
+  </div>
+</body>
+</html>

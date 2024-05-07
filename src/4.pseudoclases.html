@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head lang="es">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <title>Tailwind - Instalación</title>
+</head>
+<body class="p-4">
+    <p class="font-bold text-xl">Uso de modificadores after y placeholder:</p>
+    <button class="bg-orange-600 w-32 p-3 rounded-md relative after:content-[''] after:absolute after:left-32 after:border-8 after:border-transparent after:border-l-orange-600 after:top-4">Haz clic aqui</button>
+    
+    <input class="border ml-2 px-2 placeholder:text-orange-600 placeholder:italic" type="text" placeholder="Nombre:">
+    <br><br>
+    
+    <input type="file" class="file:bg-violet-100 file:border-0 file:rounded-lg file:text-violet-700 file:font-semibold file:px-3 hover:file:bg-violet-300">
+    <br>
+    <p class="font-bold text-xl">Listas:</p>
+    <p class="underline">Lista desordenada</p>
+    <ul class="list-disc ml-6 marker:text-red-500 ">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+    <br>
+    <p class="underline">Lista ordenada</p>
+    <ol class="list-decimal ml-6 marker:text-red-500 marker:font-bold">
+        <li>Item</li>
+        <li>Item</li>
+        <li>Item</li>
+    </ol>
+    <br>
+    <p class="font-bold text-xl">Selector de texto:</p>
+    <p class="underline">Modificar propiedades de seleccion de texto:</p>
+    <p class="selection:bg-green-500 selection:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, magnam voluptas culpa iste, distinctio facilis ducimus delectus voluptates quod deserunt exercitationem illo explicabo optio voluptate blanditiis veritatis fugiat excepturi animi.</p>
+    <br><br>
+    <p class="underline">Selector first-line first-leter:</p>
+    <p class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit blanditiis nobis enim minima provident! Sit dignissimos, necessitatibus similique rem a quisquam id aliquid distinctio deserunt voluptatem pariatur ullam enim esse.
+      Porro modi adipisci id, accusamus animi hic ipsum dignissimos. Ex deleniti necessitatibus assumenda libero, voluptatum iste perferendis aperiam beatae ut numquam possimus ducimus aliquid illum voluptate dolores molestias temporibus quisquam?
+      Quas enim consequatur veniam fuga ducimus officiis nemo nostrum laudantium natus reprehenderit labore iusto in ab facilis adipisci esse quo laborum nisi sapiente perspiciatis, hic omnis iste incidunt repellendus. Minima?
+    </p>
+  <div class="absolute bottom-0 right-0 ...">
+    <button class="bg-green-800 text-white rounded-sm py-1 px-2 m-4 hover:bg-green-700"><a href="/src"><i class="fa-solid fa-arrow-left-long"></i> Volver</a></button>
+  </div>
+</body>
+</html>

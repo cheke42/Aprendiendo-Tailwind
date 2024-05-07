@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <title> Dark Mode | Tailwind</title>
+</head>
+<body class="dark:bg-slate-900">
+    <label for="darkmode" class="dark:text-white">Dark Mode</label>
+    <input type="checkbox" id="darkmode">
+
+    <article class="w-[400px] mt-10 border rounded-lg p-3 mx-auto dark:bg-slate-80">
+        <h2 class="font-bold text-lg dark:text-white">Titulo</h2>
+        <p class="dark:text-slate-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptas soluta, libero ipsa ratione in odit ullam, eaque accusantium repudiandae totam consequatur at quos molestiae recusandae dolor animi harum architecto.</p>
+    </article>
+    <div class="absolute bottom-0 right-0 ...">
+        <button class="bg-green-800 text-white rounded-sm py-1 px-2 m-4 hover:bg-green-700"><a href="/src"><i class="fa-solid fa-arrow-left-long"></i> Volver</a></button>
+    </div>
+<script>
+const darkModeInput = document.querySelector('#darkmode');
+darkModeInput.addEventListener('click', (ev) =>{
+    document.documentElement.classList.toggle('dark')
+})
+</script>
+</body>
+</html>
